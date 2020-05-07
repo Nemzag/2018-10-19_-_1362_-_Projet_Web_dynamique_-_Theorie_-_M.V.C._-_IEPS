@@ -1,0 +1,55 @@
+/**
+ * Created by PhpStorm.
+ * User: Nemzag aka Gazmen Arifi.
+ * Date: 2018-11-08
+ * Time: 11:06
+ */
+
+/* TEMPLATE */
+
+nav.navbar {
+    overflow: visible;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 3.5em;
+}
+
+header {
+    /* margin-top: 3.5em; */
+    margin-top: 0.59em;
+    position: relative;
+    height: 22em;
+    background: url("../img/ban.jpeg") no-repeat center center;
+    /* background-repeat background-position */
+    background-size: cover;
+}
+
+main {
+    margin: 2em /*dessus*/ 0 /*droite*/ 40px /*bas*/ 0 /*gauche*/;
+}
+
+section {
+    min-height: 500px;
+}
+
+footer.footer {
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #888;
+    color: #fff;
+    text-align: center;
+}
+
+/* CONTÊNT */
+
+img {
+    width: 80px;
+}
+
+.form-control {
+    height: auto;
+}

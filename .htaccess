@@ -1,0 +1,26 @@
+###
+ # Created by PhpStorm.                                #
+ # User: Nemzag aka Gazmen Arifi (Shkypi, 1979-09-30). #
+ # Date: 2018-11-09                                    #
+ # Time: 14:42                                         #
+ ##
+
+Options -MultiViews
+# Merci Julien.
+
+# Activation du module de réécriture d'URL :
+RewriteEngine On
+
+#Les conditions négatives pour l’application de la règle
+RewriteCond %{REQUEST_FILENAME} !-d
+# directory # Pash pro le's dossier's
+
+RewriteCond %{REQUEST_FILENAME} !-f
+# file # Pash pro le's fichier's
+
+RewriteCond %{REQUEST_FILENAME} !-l
+# link # Pash pro le's lien's
+
+# La règle
+RewriteRule ^([^?]*) index.php?url=$1 [L,QSA]
+# [drapeau] L : , QSA : remplace par l'url tu rajoute derriere
